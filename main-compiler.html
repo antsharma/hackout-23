@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Webpage</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>HEADOUT</h1>
+            <ul>
+                <li><a href="#">Option 1</a></li>
+                <li><a href="#">Option 2</a></li>
+                <li><a href="#">Option 3</a></li>
+                <li><a href="#">Option 4</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content">
+        <aside>
+            <h2>Sidebar</h2>
+            <ul>
+                <li><a href="#">Sidebar Option 1</a></li>
+                <li><a href="#">Sidebar Option 2</a></li>
+                <li><a href="#">Sidebar Option 3</a></li>
+                <li><a href="#">Sidebar Option 4</a></li>
+            </ul>
+        </aside>
+
+        <!-- <main>
+            <h1>Main Content</h1>
+            <p>This is the main content area of the webpage. You can put your text input box here:</p>
+            <input type="text" placeholder="Enter text...">
+        </main> -->
+    </div>
+    <div id="codeEditor" data-pym-src= "https://www.jdoodle.com/plugin/v0/4c1af46c647a37756bb4ae5196e1930c/14949b387c992875c0cea24e0dea0120"> 
+    <pre id="output"></pre>
+  
+    <!-- This script tag contains the  
+        javascript code in the written URL -->
+    <script src= 
+"https://www.jdoodle.com/assets/jdoodle-pym.min.js"
+        type="text/javascript"> 
+    </script> 
+    <script>
+        // Initialize the code editor
+        const codeEditor = new PyM({ac 
+            selector: "#codeEditor",
+            language: "python", // Change the language as needed
+            autoRun: true,
+            output: (output) => {
+                // Append the output to an array
+                outputArray.push(output);
+                // Display the output in the <pre> element
+                document.getElementById("output").textContent = output;
+            }
+        });
+
+        // Initialize an array to store output
+        const outputArray = [];
+    </script>
+    <footer>
+        Contact Information: contact@example.com
+    </footer>
+</body>
+</html>

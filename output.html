@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Code Editor Output</title>
+</head>
+<body>
+    <h1>Code Editor</h1>
+    <div id="codeEditor" data-pym-src= "https://www.jdoodle.com/plugin/v0/4c1af46c647a37756bb4ae5196e1930c/14949b387c992875c0cea24e0dea0120">
+       
+    </div>
+
+    <h2>Output</h2>
+    <pre id="output"></pre>
+    
+    <script src="https://www.jdoodle.com/assets/jdoodle-pym.min.js" type="text/javascript"></script>
+    <script>
+        // Initialize the code editor
+        const codeEditor = new PyM({
+            selector: "#codeEditor",
+            language: "python", // Change the language as needed
+            autoRun: true,
+            output: (output) => {
+                // Append the output to an array
+                outputArray.push(output);
+                // Display the output in the <pre> element
+                document.getElementById("output").textContent = output;
+            }
+        });
+
+        // Initialize an array to store output
+        const outputArray = [];
+    </script>
+</body>
+</html>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
